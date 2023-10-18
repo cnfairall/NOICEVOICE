@@ -18,5 +18,17 @@ a {
 }
 
 body {
-  background-color: #88effd;
+  background-image: url("https://wannaparty.b-cdn.net/wp-content/uploads/2020/09/Red-Foil-Curtain_702706_Image-1.jpg");
+  background-size: fill;
+  background-repeat: repeat;
+}
+
+.image {
+  height: 300px;
+  object-fit: cover;
+
+}
+
+Card {
+  border: 1px solid rgb(255, 200, 0);
 }
