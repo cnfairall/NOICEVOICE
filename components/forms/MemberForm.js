@@ -76,7 +76,7 @@ export default function MemberForm({ memberObj }) {
             onChange={handleChange}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">{memberObj.firebaseKey ? 'Update' : 'Create'} Member
+        <Button className="gold" variant="dark" type="submit">{memberObj.firebaseKey ? 'Update' : 'Create'} Member
         </Button>
       </Form>
     </>
