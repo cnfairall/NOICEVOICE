@@ -18,13 +18,13 @@ export default function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Link passHref href="/">
-              <Nav.Link>Team</Nav.Link>
+              <Nav.Link style={{ color: 'goldenrod' }}>Team</Nav.Link>
             </Link>
             <Link passHref href="/member/new">
-              <Nav.Link>New</Nav.Link>
+              <Nav.Link style={{ color: 'goldenrod' }}>New</Nav.Link>
             </Link>
             <SearchBar />
-            <Button variant="danger" onClick={signOut}>Sign Out</Button>
+            <Button id="sign-out" variant="danger" onClick={signOut}>Sign Out</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

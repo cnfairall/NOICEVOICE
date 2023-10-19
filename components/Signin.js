@@ -5,9 +5,11 @@ import { signIn } from '../utils/auth';
 function Signin() {
   return (
     <div
+      id="sign-in"
       className="text-center d-flex flex-column justify-content-center align-content-center"
       style={{
-        height: '90vh',
+        background: 'black',
+        height: '50vh',
         padding: '30px',
         maxWidth: '400px',
         margin: '0 auto',
@@ -15,7 +17,7 @@ function Signin() {
     >
       <h1>Hi there!</h1>
       <p>Click the button below to login!</p>
-      <Button type="button" size="lg" className="copy-btn" onClick={signIn}>
+      <Button type="button" size="lg" className="gold" onClick={signIn}>
         Sign In
       </Button>
     </div>
