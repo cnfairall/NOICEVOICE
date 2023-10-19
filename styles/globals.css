@@ -49,6 +49,7 @@ body {
   color: black;
 }
 
-nav {
+#navbar {
   margin-bottom: 50px;
+  width: 100%;
 }
