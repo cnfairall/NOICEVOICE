@@ -23,7 +23,7 @@ export default function NavBar() {
             <Link passHref href="/member/new">
               <Nav.Link style={{ color: 'goldenrod' }}>New Member</Nav.Link>
             </Link>
-            <Link passHref href="/teams">
+            <Link passHref href="/">
               <Nav.Link style={{ color: 'goldenrod' }}>Teams</Nav.Link>
             </Link>
             <Link passHref href="/team/new">

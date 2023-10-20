@@ -84,7 +84,6 @@ export default function MemberForm({ memberObj }) {
             aria-label="Team"
             name="teamId"
             onChange={handleChange}
-            className="mb-3"
             value={formInput.teamId}
             required
           >
