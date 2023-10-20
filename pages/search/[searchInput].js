@@ -19,7 +19,7 @@ export default function Search() {
     return () => {
       setFilteredMembers([]);
     };
-  }, []);
+  }, [searchInput]);
 
   return (
     <>

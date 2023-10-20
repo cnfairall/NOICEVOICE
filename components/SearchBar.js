@@ -17,7 +17,7 @@ export default function SearchBar() {
   };
   return (
     <Form className="search-bar" onSubmit={handleSubmit}>
-      <FormControl type="text" size="sm" onChange={handleChange} value={searchInput} />
+      <FormControl type="text" placeholder="Search Members" size="sm" onChange={handleChange} value={searchInput} />
       <Button icon="fa-solid fa-magnifying-glass" type="submit" size="sm" variant="dark">🔎</Button>
     </Form>
   );
