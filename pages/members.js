@@ -17,7 +17,7 @@ function ShowMembers() {
 
   return (
     <div className="text-center my-4">
-      <h1 className="nabla">TEAM</h1>
+      <h1 className="nabla">MEMBERS</h1>
       <div className="d-flex flex-wrap">
         {members.map((member) => (
           <MemberCard key={member.firebaseKey} memberObj={member} onUpdate={getAllMembers} />

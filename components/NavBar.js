@@ -17,11 +17,17 @@ export default function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Link passHref href="/">
-              <Nav.Link style={{ color: 'goldenrod' }}>Team</Nav.Link>
+            <Link passHref href="/members">
+              <Nav.Link style={{ color: 'goldenrod' }}>Members</Nav.Link>
             </Link>
             <Link passHref href="/member/new">
-              <Nav.Link style={{ color: 'goldenrod' }}>New</Nav.Link>
+              <Nav.Link style={{ color: 'goldenrod' }}>New Member</Nav.Link>
+            </Link>
+            <Link passHref href="/teams">
+              <Nav.Link style={{ color: 'goldenrod' }}>Teams</Nav.Link>
+            </Link>
+            <Link passHref href="/team/new">
+              <Nav.Link style={{ color: 'goldenrod' }}>New Team</Nav.Link>
             </Link>
             <SearchBar />
             <Button id="sign-out" variant="danger" onClick={signOut}>Sign Out</Button>

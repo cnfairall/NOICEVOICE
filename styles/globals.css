@@ -49,6 +49,12 @@ body {
   color: black;
 }
 
+.black {
+  background-color: black;
+  color: white;
+  margin: 8px;
+}
+
 #navbar {
   margin-bottom: 50px;
   width: 100%;
@@ -61,7 +67,7 @@ body {
 }
 
 #sign-out {
-  margin-left: 650px;
+  margin-left: 50px;
 }
 
 #sign-in {
