@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
+import { useRouter } from 'next/router';
 import { getMembers } from '../../api/memberData';
 import { useAuth } from '../../utils/context/authContext';
 import MemberCard from '../../components/MemberCard';
 import { getSingleTeam } from '../../api/teamData';
-import { useRouter } from 'next/router';
 
 export default function ViewTeamDetails() {
   const router = useRouter();
