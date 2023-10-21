@@ -15,6 +15,7 @@ export default function MemberCard({ memberObj, onUpdate }) {
       <Card.Img variant="top" src={memberObj.image} alt={memberObj.name} className="image" />
       <Card.Body>
         <Card.Title className="nabla">{memberObj.name}</Card.Title>
+        <Card.Title>Team</Card.Title>
         <Card.Text>{memberObj.role}</Card.Text>
         <Link href={`/member/edit/${memberObj.firebaseKey}`} passHref>
           <Button variant="dark" className="gold">EDIT</Button>
