@@ -16,7 +16,7 @@ const getMemberTeam = (memberFirebaseKey) => new Promise((resolve, reject) => {
     .then((memberObj) => {
       getSingleTeam(memberObj.teamId)
         .then((teamObj) => {
-          resolve({ teamObj });
+          resolve({ memberObj, ...teamObj });
         });
     }).catch((error) => reject(error));
 });

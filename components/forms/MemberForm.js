@@ -113,6 +113,7 @@ MemberForm.propTypes = {
     role: PropTypes.string,
     image: PropTypes.string,
     firebaseKey: PropTypes.string,
+    teamId: PropTypes.string,
   }),
 };
 

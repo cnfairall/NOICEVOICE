@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { Button } from 'react-bootstrap';
 import { useAuth } from '../utils/context/authContext';
 import { getMembers } from '../api/memberData';
 import MemberCard from '../components/MemberCard';
@@ -17,7 +19,10 @@ function ShowMembers() {
 
   return (
     <div className="text-center my-4">
-      <h1 className="nabla">MEMBERS</h1>
+      <h1 className="nablaBig">MEMBERS</h1>
+      <Link href="/member/new" passHref>
+        <Button className="black add">Add A Member</Button>
+      </Link>
       <div className="d-flex flex-wrap">
         {members.map((member) => (
           <MemberCard key={member.firebaseKey} memberObj={member} onUpdate={getAllMembers} />
