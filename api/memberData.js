@@ -77,6 +77,22 @@ const searchMembers = (searchValue, uid) => new Promise((resolve, reject) => {
   }).catch(reject);
 });
 
+const getTeamMembers = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/members.json?orderBy="teamId"&equalTo="${firebaseKey}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  }).then((response) => response.json())
+    .then((data) => {
+      if (data) {
+        resolve(Object.values(data));
+      } else {
+        resolve([]);
+      }
+    }).catch(reject);
+});
+
 export {
   getMembers,
   createMember,
@@ -84,4 +100,5 @@ export {
   deleteMember,
   getSingleMember,
   searchMembers,
+  getTeamMembers,
 };

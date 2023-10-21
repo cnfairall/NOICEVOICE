@@ -1,25 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
 import { useRouter } from 'next/router';
-import { getMembers } from '../../api/memberData';
-import { useAuth } from '../../utils/context/authContext';
+import { getTeamMembers } from '../../api/memberData';
+// import { useAuth } from '../../utils/context/authContext';
 import MemberCard from '../../components/MemberCard';
-import { getSingleTeam } from '../../api/teamData';
+// import { getSingleTeam } from '../../api/teamData';
 
 export default function ViewTeamDetails() {
   const router = useRouter();
-  const { user } = useAuth();
+  // const { user } = useAuth();
   const [team, setTeam] = useState({});
-  const [members, setMembers] = useState([]);
+  // const [members, setMembers] = useState([]);
 
   const { firebaseKey } = router.query;
-
+  const filterMembers = () => {
+    getTeamMembers(firebaseKey).then(setTeam);
+    // getSingleTeam(firebaseKey).then(setTeam);
+    // getMembers(user.uid).then(setMembers);
+  };
   useEffect(() => {
-    getSingleTeam(firebaseKey).then(setTeam);
-    getMembers(user.uid).then(setMembers);
+    filterMembers();
   }, []);
-
-  const filteredMembers = members.filter((member) => ((member.teamId) === (firebaseKey)));
+  // const filteredMembers = members.filter((member) => ((member.teamId) === (firebaseKey)));
 
   return (
     <>
@@ -27,7 +29,7 @@ export default function ViewTeamDetails() {
       <Card.Title className="nabla">{team.name}</Card.Title>
       <div className="d-flex flex-wrap">
 
-        {filteredMembers.map((member) => (
+        {team.map((member) => (
           <MemberCard key={member.firebaseKey} memberObj={member} />
         ))}
       </div>

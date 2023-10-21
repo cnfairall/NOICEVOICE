@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Card, Button } from 'react-bootstrap';
 import Link from 'next/link';
 import { deleteMember } from '../api/memberData';
+import { getMemberTeam } from '../api/mergedData';
 
 export default function MemberCard({ memberObj, onUpdate }) {
+  const [team, setTeam] = useState({});
+
+  useEffect(() => (
+    getMemberTeam(memberObj.firebaseKey).then(setTeam)
+  ), []);
+  console.warn(team);
+
   const deleteAMember = () => {
     if (window.confirm(`Do you want to delete ${memberObj.name} from your team?`)) {
       deleteMember(memberObj.firebaseKey).then(() => onUpdate());
@@ -15,7 +23,7 @@ export default function MemberCard({ memberObj, onUpdate }) {
       <Card.Img variant="top" src={memberObj.image} alt={memberObj.name} className="image" />
       <Card.Body>
         <Card.Title className="nabla">{memberObj.name}</Card.Title>
-        <Card.Title>Team</Card.Title>
+        <Card.Title>{team.name}</Card.Title>
         <Card.Text>{memberObj.role}</Card.Text>
         <Link href={`/member/edit/${memberObj.firebaseKey}`} passHref>
           <Button variant="dark" className="gold">EDIT</Button>
