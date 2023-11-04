@@ -43,6 +43,13 @@ body {
   text-shadow: 0px 0px 4px black;
 }
 
+.nablaBig {
+  font-family: Nabla;
+  text-shadow: 0px 0px 4px black;
+  font-size: 60px;
+  margin: 20px;
+}
+
 .gold {
   background-color: goldenrod;
   border-color: goldenrod;
@@ -53,6 +60,7 @@ body {
   background-color: black;
   color: white;
   margin: 8px;
+  border: none;
 }
 
 #navbar {
@@ -67,9 +75,28 @@ body {
 }
 
 #sign-out {
-  margin-left: 50px;
+  margin-left: 400px;
 }
 
 #sign-in {
+  margin-top: 100px;
   border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.add {
+  margin: 20px;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+Form {
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
 }

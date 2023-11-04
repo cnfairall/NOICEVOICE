@@ -23,15 +23,16 @@ export default function ViewTeamDetails() {
 
   return (
     <>
-      <Card.Img variant="top" src={team.image} alt={team.name} className="image" />
-      <Card.Title className="nabla">{team.name}</Card.Title>
-      <div className="d-flex flex-wrap">
+      <div className="text-center my-4">
+        <Card.Img variant="top" src={team.image} alt={team.name} className="image" style={{ width: '400px' }} />
+        <Card.Title className="nablaBig">{team.name}</Card.Title>
+        <div className="d-flex flex-wrap">
 
-        {filteredMembers.map((member) => (
-          <MemberCard key={member.firebaseKey} memberObj={member} />
-        ))}
+          {filteredMembers.map((member) => (
+            <MemberCard key={member.firebaseKey} memberObj={member} />
+          ))}
+        </div>
       </div>
-
     </>
   );
 }
