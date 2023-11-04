@@ -9,10 +9,10 @@ function Signin() {
       className="text-center d-flex flex-column justify-content-center align-content-center"
       style={{
         background: 'black',
-        height: '50vh',
+        height: '30vh',
         padding: '30px',
         maxWidth: '400px',
-        margin: '0 auto',
+        margin: '300px',
       }}
     >
       <h1>Hi there!</h1>
