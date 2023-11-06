@@ -100,7 +100,7 @@ export default function MemberForm({ memberObj }) {
           }
           </Form.Select>
         </Form.Group>
-        <Button className="gold" variant="dark" type="submit">{memberObj.firebaseKey ? 'Update' : 'Create'} Member
+        <Button className="gold submit" variant="dark" type="submit">{memberObj.firebaseKey ? 'Update' : 'Create'} Member
         </Button>
       </Form>
     </>

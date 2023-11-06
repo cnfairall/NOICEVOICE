@@ -41,6 +41,7 @@ body {
 .nabla {
   font-family: Nabla;
   text-shadow: 0px 0px 4px black;
+  text-align: center;
 }
 
 .nablaBig {
@@ -100,4 +101,13 @@ Form {
   justify-content: center;
   align-items: center;
   max-width: 50%;
+  margin: 0px auto;
+}
+
+Form.Label{
+  color: gold !important;
+}
+
+.submit{
+font-weight: bold;
 }
