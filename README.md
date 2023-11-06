@@ -1,8 +1,8 @@
-# NOICE VOICE (Team Roster)  [![Netlify Status](https://api.netlify.com/api/v1/badges/7f9c5913-5fbb-442a-afde-767a9124d9f3/deploy-status)](https://app.netlify.com/sites/majestic-kashata-044390/deploys)
+# NOICE VOICE (Team Roster)[![Netlify Status](https://api.netlify.com/api/v1/badges/a02837f6-38d7-482e-95c1-bfa53894bdf5/deploy-status)](https://app.netlify.com/sites/delightful-jelly-1874d1/deploys)
 
 Team sports need not only be for people who are good at sports. Choose your fighters and make karaoke teams to battle in the ultimate showdown! 
 
-[View App](https://majestic-kashata-044390.netlify.app/)
+[View App](https://delightful-jelly-1874d1.netlify.app/)
 
 ## About the User
 - The ideal user for this application is a karaoke competition organizer.
@@ -16,11 +16,11 @@ Team sports need not only be for people who are good at sports. Choose your figh
 - When a user deletes a team or team member, that object is deleted from Firebase and removed from the DOM. When a team is deleted, its members are also deleted.
 - Users can search members by name!
 
-## Video Walkthrough of APP NAME <!-- A loom link is sufficient -->
+## Video Walkthrough of NOICE VOICE
 https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 
 ## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
-- [Check out the deployed site](https://majestic-kashata-044390.netlify.app/)
+- [Check out the deployed site](https://delightful-jelly-1874d1.netlify.app/)
 - [User Flow](https://www.figma.com/file/Dasju0NLEhSVUYSxLw6lyv/rosterMVP?type=whiteboard&node-id=0-1&t=mvm2WLOoTYtLL7mG-0)
 - [Project Board](https://github.com/users/cnfairall/projects/3)
 
