@@ -19,7 +19,7 @@ Team sports need not only be for people who are good at sports. Choose your figh
 ## Video Walkthrough of NOICE VOICE
 https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 
-## Relevant Links <!-- Link to all the things that are required outside of the ones that have their own section -->
+## Relevant Links
 - [Check out the deployed site](https://delightful-jelly-1874d1.netlify.app/)
 - [User Flow](https://www.figma.com/file/Dasju0NLEhSVUYSxLw6lyv/rosterMVP?type=whiteboard&node-id=0-1&t=mvm2WLOoTYtLL7mG-0)
 - [Project Board](https://github.com/users/cnfairall/projects/3)

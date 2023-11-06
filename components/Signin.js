@@ -13,6 +13,7 @@ function Signin() {
         padding: '30px',
         maxWidth: '400px',
         margin: '300px',
+        color: 'goldenrod',
       }}
     >
       <h1>Hi there!</h1>
