@@ -46,7 +46,7 @@ export default function TeamForm({ teamObj }) {
     <>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
-          <Form.Label>Team Name</Form.Label>
+          <Form.Label style={{ color: 'gold' }}>Team Name</Form.Label>
           <Form.Control
             type="text"
             placeholder="Enter Team Name"
@@ -56,7 +56,7 @@ export default function TeamForm({ teamObj }) {
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label>Image</Form.Label>
+          <Form.Label style={{ color: 'gold' }}>Image</Form.Label>
           <Form.Control
             type="url"
             placeholder="Enter image URL"

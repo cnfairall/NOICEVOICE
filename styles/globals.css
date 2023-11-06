@@ -104,10 +104,6 @@ Form {
   margin: 0px auto;
 }
 
-Form.Label{
-  color: gold !important;
-}
-
 .submit{
 font-weight: bold;
 }

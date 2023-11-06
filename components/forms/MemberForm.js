@@ -50,7 +50,7 @@ export default function MemberForm({ memberObj }) {
     <>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
-          <Form.Label>Team Member Name</Form.Label>
+          <Form.Label style={{ color: 'gold' }}>Team Member Name</Form.Label>
           <Form.Control
             type="text"
             placeholder="Enter Team Member's Name"
@@ -60,7 +60,7 @@ export default function MemberForm({ memberObj }) {
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label>Role</Form.Label>
+          <Form.Label style={{ color: 'gold' }}>Role</Form.Label>
           <Form.Control
             type="text"
             placeholder="Enter Role"
@@ -70,7 +70,7 @@ export default function MemberForm({ memberObj }) {
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label>Photo</Form.Label>
+          <Form.Label style={{ color: 'gold' }}>Photo</Form.Label>
           <Form.Control
             type="url"
             placeholder="Enter image URL"
