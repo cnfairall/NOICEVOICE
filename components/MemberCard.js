@@ -11,7 +11,6 @@ export default function MemberCard({ memberObj, onUpdate }) {
   useEffect(() => (
     getMemberTeam(memberObj.firebaseKey).then(setTeam)
   ), []);
-  console.warn(team);
 
   const deleteAMember = () => {
     if (window.confirm(`Do you want to delete ${memberObj.name} from your team?`)) {
