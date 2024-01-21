@@ -17,7 +17,7 @@ Team sports need not only be for people who are good at sports. Choose your figh
 - Users can search members by name!
 
 ## Video Walkthrough of NOICE VOICE
-https://www.loom.com/share/8efb5e4980414aa3b489113c785cf32a?sid=02e483a8-e3a7-4e65-bcd4-5dc686da6655
+(https://www.loom.com/share/0315512906ee4594b72d84dc5767a881)
 
 ## Relevant Links
 - [Check out the deployed site](https://delightful-jelly-1874d1.netlify.app/)
